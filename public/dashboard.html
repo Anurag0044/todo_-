@@ -1,0 +1,119 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Dashboard</h1>
+    <a href="/protected" class="btn">Access Secure Data</a>
+    <br><br>
+    <a href="/logout" class="btn">Logout</a>
+</body>
+</html> -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern To-Do List</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dash.css">
+    
+</head>
+
+<body>
+
+   <div class="welcome">
+    🚀 Welcome
+</div>
+        <!-- <p>Your secure space powered by IBM App ID</p> -->
+       
+    
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+
+    <div class="container mx-auto max-w-lg mt-8 sm:mt-16 p-4">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl sm:text-5xl font-bold text-indigo-600 dark:text-indigo-400">TodoApp</h1>
+            <p class="text-gray-500 dark:text-gray-400 mt-2">A simple and elegant way to manage your tasks.</p>
+        </header>
+
+        <!-- Main content area -->
+        <main class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+            <!-- New task input form -->
+            <form id="task-form" class="flex items-center gap-3 mb-6">
+                <input 
+                    type="text" 
+                    id="task-input" 
+                    placeholder="What needs to be done?" 
+                    class="flex-grow bg-gray-100 dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                >
+                <button 
+                    type="submit"
+                    class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-5 rounded-md transition duration-200 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75"
+                >
+                    Add
+                </button>
+            </form>
+
+            <!-- Task list -->
+            <div id="task-list-container">
+                <ul id="task-list" class="space-y-3">
+                    <!-- Task items will be inserted here by JavaScript -->
+                </ul>
+            </div>
+
+            <!-- Footer with filters and actions -->
+            <footer id="task-footer" class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700 flex justify-between items-center text-sm text-gray-500 dark:text-gray-400">
+                <div>
+                    <span id="task-count">0</span> items left
+                </div>
+                <div id="filters" class="hidden sm:flex items-center space-x-2">
+                    <button data-filter="all" class="filter-btn font-medium text-indigo-600 dark:text-indigo-400">All</button>
+                    <button data-filter="active" class="filter-btn">Active</button>
+                    <button data-filter="completed" class="filter-btn">Completed</button>
+                </div>
+                <div>
+                    <button id="clear-completed" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Clear completed</button>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    
+
+
+
+        
+
+        <br><br>
+
+        <!-- <a href="/protected" class="btn primary">Access Secure Data</a> -->
+        <a href="/logout" class="btn danger" style="
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    padding: 12px 20px;
+    border-radius: 10px;
+">
+    Logout
+</a>
+
+        <br><br>
+        <span class="badge" >🔒 Authenticated Session</span>
+
+        <p style="padding: 20px;">✨ Tip: Your login is now secure </p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

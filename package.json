@@ -1,0 +1,20 @@
+{
+  "name": "ibm-appid-auth-app",
+  "version": "1.0.0",
+  "description": "IBM Cloud App ID Full Authentication App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "ibmcloud-appid": "^4.0.0",
+    "passport": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.183.1"
+  }
+}
